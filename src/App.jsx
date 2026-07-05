@@ -5,7 +5,6 @@ import ProjectsTab from './components/ProjectsTab';
 import EvidenceTable from './components/EvidenceTable';
 import RubricTable from './components/RubricTable';
 import Summary from './components/Summary';
-import PrintView from './components/PrintView'; // Import Component Mới
 
 export default function App() {
   // Chỉ khai báo state 1 lần duy nhất
@@ -20,7 +19,6 @@ export default function App() {
       case 'evidence': return <EvidenceTable />;
       case 'rubric': return <RubricTable />;
       case 'summary': return <Summary />;
-      case 'print': return <PrintView />; // Định tuyến sang trang in
       default: return <HomeTab setActiveTab={setActiveTab} />;
     }
   };
